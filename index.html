@@ -1,54 +1,106 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <title>Freaky Fridayyy</title>
+    <title>Freaky Friday</title>
     <link rel="stylesheet" href="stiler.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
 </head>
 <body>
     
-    <div>
-        <h1>BOOK NOOK</h1>
-    </div>
+    <header>
+        <h1>Book Nook</h1>
+    </header>
     
-    <ul>
-        <li><a href="#nyutgivelser">Nyutgivelser</a></li>
-        <li><a href="#kommer_snart">Kommer snart</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="#nyutgivelser">Nyutgivelser</a></li>
+            <li><a href="#kommer_snart">Kommer snart</a></li>
+        </ul>
+    </nav>
 
-    <div class="boks">
-        <p>
+    <section class="boks">
+        <p class="innledning">
             Velkommen til Book Nook!<br>
             Synes du det er vanskelig å finne en god bok blant det enorme utvalget i bokhandelen og nettbutikken?<br>
             Det gjorde vi óg. Her har vi derfor samlet et utvalg bøker av nyere dato som du ikke vil gå glipp av!<br>
 
         </p>
-    </div>
+    </section>
 
-    <div class="boks" id="nyutgivelser">
+    <section class="boks" id="nyutgivelser">
         <h2>Nyutgivelser</h2>
-        <img src="bilder/Er-mor-død.jpg" alt="Er mor død">
-        <!--429,- https://www.cappelendamm.no/sek-asset/products/9788202671822.jpg?w=872 -->
-        <img src="bilder/Hør-hera.jpg" alt="Hør her'a!">
-        <!--349,- https://www.cappelendamm.no/sek-asset/products/9788202648121.jpg?w=872 -->
-        <img src="bilder/Forhandle-med-virkeligheten.jpg" alt="Forhandle med virkeligheten">
-        <!--349,- https://www.cappelendamm.no/sek-asset/products/9788202678845.jpg?w=872 -->
-    </div>
+        <div>
+            <div class="bok">
+                <img src="bilder/Er-mor-død.jpg" alt="Er mor død" height="200px">
+                <!-- https://www.cappelendamm.no/sek-asset/products/9788202671822.jpg?w=872 -->
+                <div class="beskrivelse">
+                    <span class="tittel">Er mor død</span>
+                    <span class="forfatter">Vigdis Hjorth</span>
+                    <span class="pris">429,-</span>
+                </div>
+            </div>
+            <div class="bok">
+                <img src="bilder/Hør-hera.jpg" alt="Hør her'a!" height="200px">
+                <!-- https://www.cappelendamm.no/sek-asset/products/9788202648121.jpg?w=872 -->
+                <div class="beskrivelse">
+                    <span class="tittel">Hør her'a!</span>
+                    <span class="forfatter">Gulraiz Sharif</span>
+                    <span class="pris">349,-</span>
+                </div>
+            </div>
+            <div class="bok">
+                <img src="bilder/Forhandle-med-virkeligheten.jpg" alt="Forhandle med virkeligheten" height="200px">
+                <!-- https://www.cappelendamm.no/sek-asset/products/9788202678845.jpg?w=872 -->
+                <div class="beskrivelse">
+                    <span class="tittel">Forhandle med virkeligheten</span>
+                    <span class="forfatter">Erlend Loe</span>
+                    <span class="pris">349,-</span>
+                </div>
+            </div>
+            </div>
+    </section>
 
-    <div class="boks">
+    <section class="boks">
         <button class="button" onclick="alert('Denne funksjonen er dessverre ikke tilgjengelig.')">Bestill / Forhåndsbestill</button>
-    </div>
+    </section>
 
-    <div class="boks" id="kommer_snart">
+    <section class="boks" id="kommer_snart">
         <h2>Kommer snart</h2>
-        <img src="bilder/Vår-mann-i-Washington.jpg" alt="Vår mann i Washington">
-        <!--399,- https://www.cappelendamm.no/sek-asset/products/9788202611576.jpg?w=872 -->
-        <img src="bilder/Sapiens.jpg" alt="Sapiens">
-        <!--299,- https://www.cappelendamm.no/sek-asset/products/9788202672775.jpg?w=872 -->
-        <img src="bilder/Kråkemannen.jpg" alt="Kråkemannen">
-        <!--379,- https://www.cappelendamm.no/sek-asset/products/9788202680671.jpg?w=872 -->
-    </div>
+        <div>
+            <div class="bok">
+                <img src="bilder/Vår-mann-i-Washington.jpg" alt="Vår mann i Washington" height="200px">
+                <!-- https://www.cappelendamm.no/sek-asset/products/9788202611576.jpg?w=872 -->
+                <div class="beskrivelse">
+                    <span class="tittel">Vår mann i Washington</span>
+                    <span class="forfatter">Hans D. Høeg</span>
+                    <span class="pris">399,-</span>
+                </div>
+            </div>
+            <div class="bok">
+                <img src="bilder/Sapiens.jpg" alt="Sapiens" height="200px">
+                <!-- https://www.cappelendamm.no/sek-asset/products/9788202672775.jpg?w=872 -->
+                <div class="beskrivelse">
+                    <span class="tittel">Sapiens</span>
+                    <span class="forfatter">Yuval Noah Harari, David Vandermeulen</span>
+                    <span class="pris">299,-</span>
+                </div>
+            </div>
+            <div class="bok">
+                <img src="bilder/Kråkemannen.jpg" alt="Kråkemannen" height="200px">
+                <!-- https://www.cappelendamm.no/sek-asset/products/9788202680671.jpg?w=872 -->
+                <div class="beskrivelse">
+                    <span class="tittel">Kråkemannen</span>
+                    <span class="forfatter">Alf Marius Opsahl, Espen Sletteberg</span>
+                    <span class="pris">379,-</span>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <div>Book covers hentet fra <a href="https://www.boktips.no/skjonnlitteratur/romaner/bokhosten-2020/">www.boktips.no</a></div>
+    </footer>
 
 </body>
 </html>
