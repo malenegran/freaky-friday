@@ -129,7 +129,7 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
     nav {
         padding-left: 0;
     }
@@ -166,7 +166,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .boks {
         padding: 10px;
     }
